@@ -1,0 +1,31 @@
+<form>
+  <div class="mb-3">
+    <h2>Nuevo Producto</h2>
+    <label for="disabledTextInput" class="form-label">Titulo del Juego</label>
+    <input type="text" [(ngModel)]="miJuego.Nombre" name="Nombre" class="form-control" >
+    <label for="disabledTextInput" class="form-label">Fecha </label>
+    <input type="date" [(ngModel)]="miJuego.Categoria" name="Categoria" class="form-control" >
+
+    <label for="disabledTextInput" class="form-label">edicion</label>
+    <input type="text" [(ngModel)]="miJuego.CantExistente" name="Existencias" class="form-control" >
+
+    <label for="disabledTextInput" class="form-label">Nombre del autor</label>
+    <input type="text" [(ngModel)]="miJuego.Costo" name="Costo"class="form-control" >
+
+    <label for="disabledTextInput" class="form-label">email:</label>
+    <input type="email" [(ngModel)]="miJuego.Origen"  name="Pais" class="form-control" >
+
+    <label for="disabledTextInput" class="form-label">costo</label>
+    <input type="number" [(ngModel)]="miVig.vigencia" name="Hasta..." class="form-control" >
+
+    <label for="disabledTextInput" class="form-label">version</label>
+    <input type="text" [(ngModel)]="miJuego.FechaAdmicion" name="version" class="form-control" >
+
+    <label for="disabledTextInput" class="form-label">IMAGEN</label>
+    <input type="file" (change)="convertir_a_B64($event)" accept="image/*" class="form-control">
+
+
+    <button type="button" class="btn btn-primary" (click)="enviarJuego()">Registrar nuevo Producto</button>
+</div>
+</form>
+

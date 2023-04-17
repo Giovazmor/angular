@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-lg navbar-ligth bg-ligth">
+  <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsOp-CiA3Zo9nx7W8wLs8HEM9nhosEdf-iDg&usqp=CAU" width="60" />GameZone</a>
+
+  <div class="collapse navbar-collapse " id="navbarNav">
+    <ul class="navbar-nav mx-auto">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Productos </a>
+          <ul class="dropdown-menu">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="ListaProducto" routerLinkActive="active">Compras </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="NuevoProducto" routerLinkActive="active">Agregar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="CatagoloProducto" routerLinkActive="active">Catalogo</a>
+            </li>
+            <li>
+              <a class="nav-link" routerLink="actualizarProducto/:id" routerLinkActive="active">Modificar</a>
+            </li>
+
+          </ul>
+
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Proveedores </a>
+          <ul class="dropdown-menu">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="ListaProveedor" routerLinkActive="active">Lista </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="NuevoProveedor" routerLinkActive="active">Agregar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="CatalogoProveedor" routerLinkActive="active">Catalogo de provedores</a>
+            </li>
+            <li>
+              <a class="nav-link" routerLink="actualizarProve/:id" routerLinkActive="active">Modificar</a>
+            </li>
+
+          </ul>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Marcas </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="ListaMarca" routerLinkActive="active">Lista de marcas </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="NuevaMarca" routerLinkActive="active">Agregar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="CatalogoMarca" routerLinkActive="active">Catalogo de Marcas</a>
+                </li>
+                <li>
+                  <a class="nav-link" routerLink="actualizarMarca/:id" routerLinkActive="active">Modificar</a>
+                </li>
+              </ul>
+
+            </li>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Buscar">
+        <button class="btn btn-outline-secondary" type="button">Buscar</button>
+      </form>
+    </ul>
+  </div>
+
+</nav>
+
